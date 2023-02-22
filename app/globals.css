@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body{
+body:not(Navbar){
     @apply bg-gradient-to-r from-violet-500 to-fuchsia-500;
-    @apply text-white font-semibold text-center mt-7;
+    
+    
 }
