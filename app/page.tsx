@@ -4,6 +4,7 @@ import { Inter } from '@next/font/google'
 import styles from './page.module.css'
 import { useSession, signIn, signOut } from "next-auth/react"
 import LoginCard from './LoginCard'
+import { motion } from 'framer-motion'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,6 +35,6 @@ export default function Home() {
     )
   }
   return (
-    <LoginCard/>
+    < LoginCard/>
   )
 }
