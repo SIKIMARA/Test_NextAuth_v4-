@@ -19,8 +19,8 @@ export default function Home() {
           <h1 className='text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-violet-500 to-fuchsia-500'>User Information</h1>
           <div className='p-10 bg-gradient-to-r from-violet-500 to-fuchsia-500 rounded-md  mx-auto flex flex-col justify-center text-white font-bold'>
             
-            <img src={session.user?.image} width={100} height={100} className='rounded-full mx-auto'/>
-            <h1 className='text-2xl'>{session.user?.name}</h1>
+            <img src={session.user?.image!} width={100} height={100} className='rounded-full mx-auto'/>
+            <h1 className='text-2xl'>{session.user?.name!}</h1>
             <h1 className='text-xl'>{session.user?.email}</h1>
           </div>
           <button onClick={()=>{signOut()}}  className='flex items-center justify-center w-full p-3 mt-5 text-white bg-gradient-to-r from-violet-500 to-fuchsia-500'>
